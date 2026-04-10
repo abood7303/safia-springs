@@ -12,9 +12,12 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 
-RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache || true
-RUN chmod -R 775 /var/www/storage /var/www/bootstrap/cache || true
+RUN mkdir -p /var/www/database \
+    && touch /var/www/database/database.sqlite \
+    && chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache /var/www/database || true \
+    && chmod -R 775 /var/www/storage /var/www/bootstrap/cache /var/www/database || true
 
 EXPOSE 10000
 
-CMD sh -c "php artisan config:clear && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"
+CMD sh -c "php artisan config:clear && php artisan cache:clear && php artisan route:clear && php artisan view:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"
+
