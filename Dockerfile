@@ -1,7 +1,9 @@
 FROM php:8.3-cli
 
 RUN apt-get update && apt-get install -y \
-    git curl zip unzip libpq-dev libzip-dev libonig-dev libxml2-dev \
+    git curl zip unzip \
+    libpq-dev libzip-dev libonig-dev libxml2-dev \
+    libsqlite3-dev sqlite3 \
     && docker-php-ext-install pdo pdo_sqlite pdo_mysql pdo_pgsql mbstring zip exif pcntl bcmath
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
