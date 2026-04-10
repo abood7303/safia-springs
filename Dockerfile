@@ -16,8 +16,9 @@ RUN composer install --no-dev --optimize-autoloader
 
 RUN mkdir -p /var/www/database \
     && touch /var/www/database/database.sqlite \
+    && mkdir -p /var/www/storage/framework/views \
     && chmod -R 775 /var/www/storage /var/www/bootstrap/cache /var/www/database || true
 
 EXPOSE 10000
 
-CMD sh -c "php artisan config:clear && php artisan route:clear && php artisan view:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"
+CMD sh -c "php artisan config:clear && php artisan route:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"
