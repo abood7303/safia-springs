@@ -119,7 +119,7 @@
                                 class="absolute inset-0 bg-secondary/5 rounded-3xl -rotate-6 ghost-border scale-95 opacity-50 group-hover:rotate-0 transition-transform duration-700">
                             </div>
                             <img class="pop-out-image relative z-10 w-full h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
-                                src="/images/safia-3d-family.png" alt="Safia Family 3D Bottle" />
+                                src="/images/img-1.png" alt="Safia Family 3D Bottle" />
                         </div>
                         <div class="absolute -bottom-10 -left-10 glass-card p-8 rounded-2xl z-20 ghost-border max-w-xs">
                             <p class="text-secondary font-headline text-4xl mb-2 italic">8.1 pH</p>
