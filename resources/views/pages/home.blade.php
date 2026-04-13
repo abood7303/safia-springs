@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <br>
     <title>Safia Springs | مياه ينابيع صافيا - نقاء طبيعي من قلب الجزيرة</title>
     <meta name="description" content="استمتع بأفضل مياه معدنية طبيعية من ينابيع صافيا. نقاء لا يضاهى، توازن معدني مثالي وتوصيل سريع في المملكة العربية السعودية." />
     <meta name="keywords" content="مياه صافيا, مياه معدنية السعودية, مياه ينابيع طبيعية, توصيل مياه الرياض, مياه شرب نقية, Safia Springs" />
@@ -17,9 +18,9 @@
     <meta property="og:title" content="Safia Springs | مياه ينابيع صافيا - نقاء من قلب الطبيعة" />
     <meta property="og:description" content="اكتشف نقاء مياه ينابيع صافيا الطبيعية. توازن معدني فريد وتصميم عصري يلامس الروح." />
     <meta property="og:image" content="{{ asset('images/safia-og-preview.jpg') }}" />
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <!-- CSS and JS (Direct Paths) -->
+    <link rel="stylesheet" href="/css/app.css" />
+    <script src="/js/app.js" defer></script>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;display=swap"
@@ -27,8 +28,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
 
 </head>
@@ -69,12 +68,19 @@
             <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 md:px-12">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="order-2 lg:order-1 flex justify-center items-center">
-                        <div class="relative w-full max-w-2xl flex items-center justify-center pop-out-container">
+                        <div class="relative w-full max-w-2xl flex items-center justify-center pop-out-container h-[400px] md:h-[600px]">
                             <div class="absolute w-[80%] aspect-square bg-secondary/10 rounded-full blur-[120px] scale-110">
                             </div>
-                            <img alt="Safia Premium Bottle"
-                                class="relative z-10 w-full max-w-md h-auto object-contain product-shadow transition-transform duration-300 ease-out animate-[pulse_8s_ease-in-out_infinite]"
-                                id="hero-bottle" src="/images/safia-3d-family-removebg-preview.png" />
+                            <!-- Left Bottle -->
+                            <img alt="Safia Bottle Left"
+                                class="relative z-10 w-full h-full object-contain product-shadow transition-transform duration-500 ease-out"
+                                id="bottle-left" src="/images/Gemini_Generated_Image_xd66i8xd66i8xd66-removebg-preview-removebg-preview (1).png"
+                                style="clip-path: inset(0 45% 0 0);" />
+                            <!-- Right Bottle -->
+                            <img alt="Safia Bottle Right"
+                                class="absolute z-10 w-full h-full object-contain product-shadow transition-transform duration-500 ease-out"
+                                id="bottle-right" src="/images/Gemini_Generated_Image_xd66i8xd66i8xd66-removebg-preview-removebg-preview (1).png"
+                                style="clip-path: inset(0 0 0 45%);" />
                         </div>
                     </div>
                     <div class="order-1 lg:order-2 text-right reveal">
@@ -84,8 +90,9 @@
                             الطبيعة</h1>
                         <p
                             class="text-on-surface-variant text-lg md:text-xl max-w-2xl ms-auto mb-12 font-light leading-relaxed">
-                            استمتع بجوهر المياه الكريستالية الصافية من الينابيع البكر. تقدم لك صافيا الترطيب في أرقى صوره،
-                            معبأ من مصدر الحياة مباشرة بتصميم عصري يلامس الروح.
+                            مياه نبع صافيا هي المنتج الوحيد والأساسي لشركة تعبئة المياه الصحية. تم تأسيس الشركة عام 1973 وحافظت على سعيها الدائم للابتكار والاستفادة من 50 عامًا من الخبرة في مجال تعبئة المياه.
+
+
                         </p>
                         <div class="flex flex-col md:flex-row items-center justify-start gap-6">
                             <a class="liquid-gradient text-on-secondary px-12 py-5 rounded-full font-label text-sm tracking-widest ghost-border shadow-[0_0_40px_rgba(201,168,76,0.2)] hover:scale-105 transition-all duration-500 w-full md:w-auto text-center"
@@ -118,7 +125,7 @@
                             <div
                                 class="absolute inset-0 bg-secondary/5 rounded-3xl -rotate-6 ghost-border scale-95 opacity-50 group-hover:rotate-0 transition-transform duration-700">
                             </div>
-                            <img class="pop-out-image relative z-10 w-full h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
+                            <img class="relative z-10 w-2/3 mx-auto h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)] parallax-img"
                                 src="/images/img-1.png" alt="Safia Family 3D Bottle" />
                         </div>
                         <div class="absolute -bottom-10 -left-10 glass-card p-8 rounded-2xl z-20 ghost-border max-w-xs">
@@ -133,9 +140,10 @@
                             المتدفق<br />
                             <!-- <span class="text-secondary italic">A Legacy of Pure Flow</span> -->
                         </h2>
-                        <p class="text-on-surface-variant text-lg leading-relaxed font-light">ليست ينابيع صافيا مجرد شركة
-                            مياه، بل هي حارس للنقاء الطبيعي. تتدفق ينابيعنا منذ قرون في أعماق آفاقنا القاحلة، وتتم تصفيتها
-                            بشكل طبيعي عبر طبقات غنية بالمعادن لتصل إلى عبوتك دون أن تمسها يد بشر.</p>
+                        <p class="text-on-surface-variant text-lg leading-relaxed font-light">
+                            تتميز مياه نبع صافيا بنقاوتها وطعمها المميز. وهي تنبع من المياه الجوفية العميقة المحمية. ويقع مصنعنا في منطقة سعد بمحافظة رماح على بعد 120 كم شرق الرياض، بعيداً عن المنشآت الحضرية والتلوث الخارجي.
+
+                            نستخدم أحدث التقنيات وأكثرها تطوراً في عملية التعبئة الآلية بالكامل ونلتزم بأعلى معايير الصحة والسلامة. منذ البداية، نحرص على تقديم أعلى معايير جودة للمياه المعبأة مباشرة من المصدر.</p>
                         <div class="mt-8 flex gap-12">
                             <div>
                                 <p class="text-white text-3xl font-headline">0.00%</p>
@@ -168,7 +176,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div class="flex flex-col gap-8 h-full">
                         <div
-                            class="glass-card p-10 rounded-3xl ghost-border flex items-center justify-between group hover:border-secondary/40 transition-all duration-700 h-1/2 relative overflow-hidden">
+                            class="glass-card p-10 rounded-3xl ghost-border flex items-center justify-between group hover:border-secondary/40 transition-all duration-700 h-1/2 relative overflow-hidden reveal">
                             <div class="z-10">
                                 <h4 class="text-2xl font-headline text-white mb-2">المجموعة اليومية</h4>
                                 <p class="text-on-surface-variant text-sm font-label tracking-widest mb-6">330ml • Pack of
@@ -182,7 +190,7 @@
                             <div
                                 class="relative w-1/3 aspect-square flex items-center justify-center bg-secondary/5 rounded-lg">
                                 <img alt="Safia 330ml"
-                                    class="h-4/5 object-contain group-hover:scale-110 transition-transform duration-700"
+                                    class="h-4/5 object-contain group-hover:scale-110 transition-transform duration-700 parallax-img"
                                     src="/images/safia-3d-family-removebg-preview.png" />
                             </div>
                         </div>
@@ -206,10 +214,10 @@
                         </div>
                     </div>
                     <div
-                        class="glass-card rounded-3xl ghost-border group hover:border-secondary/40 transition-all duration-700 relative overflow-hidden flex flex-col md:flex-row items-center justify-end min-h-[600px]">
+                        class="glass-card rounded-3xl ghost-border group hover:border-secondary/40 transition-all duration-700 relative overflow-hidden flex flex-col md:flex-row items-center justify-end min-h-[600px] reveal">
                         <div class="absolute inset-0 w-full h-full">
                             <img alt="Royal Edition Background"
-                                class="w-full h-full object-cover object-center opacity-70 group-hover:scale-105 transition-transform duration-1000"
+                                class="w-full h-full object-cover object-center opacity-70 group-hover:scale-105 transition-transform duration-1000 parallax-img"
                                 src="/images/family-bottle.png" />
                             <div
                                 class="absolute inset-0 bg-gradient-to-l from-surface via-transparent to-transparent opacity-80">
@@ -263,7 +271,7 @@
         <!-- Sustainability Section -->
         <section class="relative py-40 overflow-hidden" id="sustainability">
             <div class="absolute inset-0 z-0">
-                <img alt="Nature conservation" class="w-full h-full object-cover opacity-40"
+                <img alt="Nature conservation" class="w-full h-full object-cover opacity-40 parallax-img"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUHT8UyWYxOdRhACAUrdQa8QD3lf7sJtFlCdxthbtp7CVgwmlI7Qx14z9xAN01CAiN6bqXpAGEz2jzeGeHcvtliL4Tif79Vg-yPP_c-wi1SOHEASRSFDC-u0NMzj-idmCvy1bEqtJfOnRfG_9tY8OE157tkDTwrWnFVFhLZhJ1uavsTWzLHM5iaeKCem56D1zoD6yn78ALsrdIA5LJsjoTy5pp3GTiqiVSCKFc-J_ARd0sqLTGrfRqoSaU__hAkKREQ-XRpK9PwD4" />
                 <div class="absolute inset-0 bg-surface/50"></div>
             </div>
@@ -475,10 +483,45 @@
             var rotateX = (e.clientY - window.innerHeight / 2) * -0.015;
 
             var bottle = document.getElementById('hero-bottle');
+            var bLeft = document.getElementById('bottle-left');
+            var bRight = document.getElementById('bottle-right');
+
             if (bottle) {
                 bottle.style.transform =
                     'translate(' + moveX + 'px, ' + moveY + 'px) rotateY(' + rotateY + 'deg) rotateX(' + rotateX + 'deg)';
             }
+            if (bLeft && bRight) {
+                bLeft.style.transform = 'translate(' + moveX + 'px, ' + moveY + 'px) rotateY(' + rotateY + 'deg) rotateX(' + rotateX + 'deg)';
+                bRight.style.transform = 'translate(' + moveX + 'px, ' + moveY + 'px) rotateY(' + rotateY + 'deg) rotateX(' + rotateX + 'deg)';
+            }
+        });
+
+        // All images animation on scroll
+        window.addEventListener('scroll', function() {
+            var scrollPos = window.scrollY;
+
+            // Hero Bottle split logic
+            var bLeft = document.getElementById('bottle-left');
+            var bRight = document.getElementById('bottle-right');
+            if (bLeft && bRight) {
+                var factor = window.innerWidth < 768 ? 0.1 : 0.2;
+                var moveAmount = scrollPos * factor;
+                bLeft.style.marginLeft = '-' + moveAmount + 'px';
+                bRight.style.marginLeft = moveAmount + 'px';
+            }
+
+            // Parallax effect for all images with .parallax-img class
+            document.querySelectorAll('.parallax-img').forEach(function(img) {
+                var speed = 0.1;
+                var rect = img.getBoundingClientRect();
+                var windowHeight = window.innerHeight;
+
+                if (rect.top < windowHeight && rect.bottom > 0) {
+                    var shift = (rect.top - windowHeight / 2) * speed;
+                    // Apply smooth parallax
+                    img.style.translate = '0 ' + shift + 'px';
+                }
+            });
         });
 
         // Handle navigation active state
