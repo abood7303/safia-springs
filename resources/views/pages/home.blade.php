@@ -125,8 +125,8 @@
                             <div
                                 class="absolute inset-0 bg-secondary/5 rounded-3xl -rotate-6 ghost-border scale-95 opacity-50 group-hover:rotate-0 transition-transform duration-700">
                             </div>
-                            <img class="relative z-10 w-2/3 mx-auto h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)] parallax-img"
-                                src="/images/img-1.png" alt="Safia Family 3D Bottle" />
+                            <img class="relative z-10 w-2/3 mx-auto h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)] opacity-10 parallax-img"
+                                src="/images/Gemini_Generated_Image_qo95bqo95bqo95bq.png" alt="Safia Family 3D Bottle" />
                         </div>
                         <div class="absolute -bottom-10 -left-10 glass-card p-8 rounded-2xl z-20 ghost-border max-w-xs">
                             <p class="text-secondary font-headline text-4xl mb-2 italic">8.1 pH</p>
@@ -217,7 +217,7 @@
                         class="glass-card rounded-3xl ghost-border group hover:border-secondary/40 transition-all duration-700 relative overflow-hidden flex flex-col md:flex-row items-center justify-end min-h-[600px] reveal">
                         <div class="absolute inset-0 w-full h-full">
                             <img alt="Royal Edition Background"
-                                class="w-full h-full object-cover object-center opacity-70 group-hover:scale-105 transition-transform duration-1000 parallax-img"
+                                class="w-full h-full object-cover object-center opacity-70 group-hover:scale-105 transition-transform duration-1000"
                                 src="/images/family-bottle.png" />
                             <div
                                 class="absolute inset-0 bg-gradient-to-l from-surface via-transparent to-transparent opacity-80">
